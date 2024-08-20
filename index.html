@@ -1,53 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Portfolio Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>My Portfolio</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+	<!------Header Section------>
+	<header>
+		<a href="#" class="logo">Devlo<span>pe</span>r..</a>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a Fullstack Developer with a passion for creating dynamic web applications. I have experience in various technologies including Python, Java, Spring Boot, and more.</p>
+	<!---------Home Section--------------->
+	<section class="home" id="home" style="display: flex; align-items: center; justify-content: space-between;  background-color: #1a1a1a; color: #fff;">
+        <div class="home-text" style="max-width: 50%;">
+            <div class="slide" style="font-size: 16px; color: #10a1cd;">
+                <h1><span class="one" style="font-weight: bold;">HI</span></h1>
+            </div>
+            <h1 style="font-size: 48px; margin: 20px 0; line-height: 1.2;">
+                I'm <span style="color: #10a1cd;">Nijiya</span>
+            </h1>
+            <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+               I'm an aspiring Fullstack Developer skilled in front-end and back-end technologies, looking for opportunities to contribute and grow in the tech industry.
+            </p>
+            <div class="button" style="margin-top: 30px;">
+                <a href="NIJIYA K S word cv 2024.pdf" download class="btn" style="padding: 12px 30px; background-color: #10a1cd; color: #1a1a1a; text-decoration: none; font-weight: bold; border-radius: 5px;">Download My CV</a>
+            </div>
+        </div>
+        <div class="home-image" style="max-width: 45%;">
+            <img src="menew.jpg" alt="Nijiya's Image" style="width: 100%; border-radius: 5px;">
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>OTT Platform</h3>
-            <p>A comprehensive platform for streaming content with both user and admin functionalities.</p>
-        </div>
-        <div class="project">
-            <h3>Medical Store Management System</h3>
-            <p>A system to manage inventory and sales for a medical store.</p>
-        </div>
-        <div class="project">
-            <h3>Weight Loss Management System</h3>
-            <p>A system to track and manage weight loss goals and progress.</p>
-        </div>
-    </section>
+	<!---------about Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="nijiyacopy.jpg">
+		</div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to <a href="mailto:your.email@example.com">email me</a>.</p>
-    </section>
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Fullstack Developer!</h4>
+            <p>Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.</p>
+            <div id="accordion" class="accordion-container">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                      Experience
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse hide" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Python Fullstack Developer Intern<br>Mashupstack, Trivandrum | 2023 - 2024</p>
+                      <p>Apprentice<br>Divisional Railway Managers Office, Trivandrum | 2022 - 2023</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      Education
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>COPA (Computer Operator and Programming Assistant)<br>NSTI - Trivandrum | 2020 - 2021</p>
+                      <p>BSc in Computer Science<br>A J College of Arts and Science Technology | 2017 - 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </section>
+  <section class="skills" id="skills" style="padding: 50px; text-align: center;">
+    <h2 style="margin-bottom: 40px;">My Skills</h2>
+    <div class="skills-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div class="skill" style="margin: 20px;">
+            <img src="react.png" alt="React" style="width: 100px;">
+            <h4 style="margin-top: 10px;">React</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="django.png" alt="Django" style="width: 100px;">
+            <h4 style="margin-top: 10px;">Django</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="python.png" alt="Bootstrap" style="width: 100px;">
+            <h4 style="margin-top: 10px;">Python</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="sql.png" alt="Bootstrap" style="width: 100px;">
+            <h4 style="margin-top: 10px;">MySQL</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="javascript.png" alt="Bootstrap" style="width: 100px;">
+            <h4 style="margin-top: 10px;">JavaScript</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="htmlicon.png" alt="HTML" style="width: 100px;">
+            <h4 style="margin-top: 10px;">HTML</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="cssicon.png" alt="CSS" style="width: 100px;">
+            <h4 style="margin-top: 10px;">CSS</h4>
+        </div>
+        <div class="skill" style="margin: 20px;">
+            <img src="booticon.png" alt="Bootstrap" style="width: 100px;">
+            <h4 style="margin-top: 10px;">Bootstrap</h4>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+  
+<!-----------Portfolio Section--------------->
+<section class="project" id="project">
+	<div class="main-text">
+		<h2><span>My  </span>Projects</h2>
+	</div>
+	<div class="project-content">
+		<div class="row">
+			<img src="img13.jpg" >
+			<div class="layer">
+				<h5>Ott Platform</h5>
+				<p>Built an OTT platform for streaming content using Django for the backend and React for the frontend.</p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
 
-    <script src="script.js"></script>
+		<div class="row">
+			<img src="img17.jpg" >
+			<div class="layer">
+				<h5>Medical Store Management Site </h5>
+				<p>Developed a Django-based system for managing medical store operations</p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img18.jpg" >
+			<div class="layer">
+				<h5>Weight Loss Management Site</h5>
+				<p>Created a responsive application to track and manage weight loss using React.js and Redux for state 
+                    management. </p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		
+	</div>
+
+</section>
+
+<!------------------Contact section------------>
+<section class="contact" id="contact">
+	<div class="contact-text">
+		<h2>Get in <span>Touch</span></h2>
+		<p>If you're seeking a motivated and eager software developer to join your team, I'd love to connect! I'm always open to discussing new projects, creative ideas, or opportunities to contribute to exciting visions. 
+            Feel free to reach out with any questions or inquiries.
+             I'm happy to answer your questions and set up a meeting with you. Let's create something amazing together!</p>
+		<div class="list">
+			<li><a href="#">+91-7902242935</a></li>
+			<li><a href="#">nijiyaks444@gmail.com</a></li>
+			<li><a href="#">Like Share & Subscribe</a></li>
+		</div>
+
+		<div class="contact-icons">
+            <a href="https://www.linkedin.com/in/nijiya-k-0059b51b0/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://instagram.com/itz_me_nijiya?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/nijiyaks" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+	</div>
+	<div class="contact-form">
+		<form action="">
+			<input type="name" placeholder="Your Name " required>
+			<input type="email" placeholder="Your Email " required>
+			<input type="number" placeholder="your Mobile Number" required>
+			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+			<input type="submit" value="Send Message" class="submit" required>
+		</form>
+
+	</div>
+</section>
+
+<!---------End Section---------->
+<section class="end">
+	<div class="last-text">
+		<p>With regards Nijiya k s</p>
+	</div>
+	<div class="top">
+		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+	</div>
+</section>
+
 </body>
+
 </html>
