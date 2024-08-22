@@ -185,6 +185,7 @@ section {
 
     .row img {
        height:auto;
+        width:100%;
     }
 
     .layer {
