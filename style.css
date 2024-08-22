@@ -107,7 +107,7 @@ section {
 
 .project-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -145,7 +145,7 @@ section {
 }
 
 .layer h5 {
-    font: 20px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -154,7 +154,6 @@ section {
     color: #FFF;
     font-size: 1rem;
     line-height: 1.8;
-
 }
 
 .layer i {
@@ -168,16 +167,43 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
 }
 
 .row:hover img {
     transform: scale(1.1);
-
 }
 
 .row:hover .layer {
     height: 100%;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 576px) {
+    .project-content {
+        grid-template-columns: 1fr; /* Single column for extra small screens */
+    }
+
+    .row img {
+        height: auto; /* Make sure the image scales proportionally */
+    }
+
+    .layer {
+        padding: 0 20px; /* Reduce padding for small screens */
+    }
+
+    .layer h5 {
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+
+    .layer p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    .layer i {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .contact {
