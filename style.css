@@ -7,15 +7,15 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font:Railway;
 }
 
 :root {
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
+    --bg-color: #1a1a1a;
+    --second-bg-color: #1a1a1a;
     --text-color: #fff;
     --second-color: #ccc;
-    --main-color: #05b4ff;
+    --main-color: #20eaea;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     right: 0;
@@ -36,50 +36,25 @@ header {
     align-items: center;
     justify-content: center;
     background: transparent;
+    background-color: #1a1a1a;
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
 }
 
-.logo {
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 17px Raleway;
+    padding: 10px 10px;
+    
 }
 
 span {
     color: var(--main-color);
 }
 
-.navlist {
-    display: flex;
-}
-
-.navlist a {
-    color: var(--second-color);
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 25px;
-    transition: all .45s ease;
-}
-
-.navlist a:hover {
-    color: var(--main-color);
-}
-
-.navlist a.active {
-    color: var(--main-color);
-}
-
-#menu-icon {
-    font-size: 35px;
-    color: var(--text-color);
-    z-index: 1000;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
-}
 
 section {
     padding: 160px 15% 120px;
@@ -91,7 +66,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-    background-color: #1a1a1ac0;
+    
 }
 
 .about-img img {
@@ -125,7 +100,7 @@ section {
 .about-text p {
     color: var(--second-color);
     font-size: var(--p-font);
-    font-family: 'Times New Roman', Times, serif;
+    font: Raleway;
     line-height: 1.8;
     margin-bottom: 4rem;
 }
@@ -155,7 +130,7 @@ section {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #20eaea);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -175,7 +150,7 @@ section {
 }
 
 .layer p {
-    color: var(--second-color);
+    color: #FFF;
     font-size: 1rem;
     line-height: 1.8;
 
@@ -276,19 +251,40 @@ section {
     position: relative;
 }
 
-.contact-form form input,
-form textarea {
+.submit,.contact-form form input,
+form textarea{
     width: 100%;
     padding: 14px;
     background: var(--bg-color);
     color: var(--text-color);
-    border: none;
+    border: 1px solid white;
     outline: none;
     font-size: 15px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+.last-text p {
+    color: var(--second-color);
+    font-size: 14px;
 
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
+}
 .contact-form textarea {
     resize: none;
     height: 240px;
@@ -306,30 +302,6 @@ form textarea {
 .contact-form .submit:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-
-.end {
-    padding: 20px 15%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background: var(--bg-color);
-}
-
-.last-text p {
-    color: var(--second-color);
-    font-size: 14px;
-
-}
-
-.top i {
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 15px;
-    color: var(--text-color);
-    background: var(--main-color);
 }
 
 @media (max-width: 1480px) {
@@ -374,57 +346,8 @@ form textarea {
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 480px){
-    #menu-icon{
-        display: block;
-    }
-    .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
 
-    }
-    .navlist a{
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-
-    }
-    .navlist a:hover{
-        color: var(--main-color);
-    }
-    navlist a.active{
-        color: var(--text-color);
-    }
-    .navlist.open{
-        top: 100%;
-    }
-}
   
-  .progress {
-    background-color: #e9ecef;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .progress-bar {
-    background-color: #007bff;
-    height: 20px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    font-size: 0.9rem;
-    transition: width 0.6s ease;
-  }
   .accordion-container {
     display: flex;
     gap: 20px; /* Space between the two accordions */
@@ -443,7 +366,7 @@ form textarea {
   
   .card-header {
     padding: 15px;
-    background-color: #007bff;
+    background-color: #20eaea;
     color: rgb(0, 1, 1);
     cursor: pointer;
   }
@@ -455,7 +378,7 @@ form textarea {
   
   .card-body {
     padding: 15px;
-    background-color: #4573a1;
+    background-color: #0a7b7e;
     
   }
   
