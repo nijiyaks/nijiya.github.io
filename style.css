@@ -185,7 +185,7 @@ section {
 
     .row img {
         height: 200px; 
-        width:50%;
+        
         object-fit: cover; 
     }
 
